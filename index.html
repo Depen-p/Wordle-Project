@@ -5,9 +5,67 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wordle</title>
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=help" />
+    <script src="script.js" defer></script>
 </head>
 <body>
-    
+    <div class="header">
+        <button class="material-symbols-outlined">help</button>
+        <h1>WORDLE</h1>
+    </div>
+    <div class="main">
+        <div class="possible">
+            <div class="toggle">
+                <input type="checkbox" id="check">
+                <label for="check" class="toggle-button"></label>
+            </div>
+            <h4>Show possibilities & top picks</h3>
+            <div class="show-hint" id="possible-words">
+                <h3>Possible Words : </h3>
+                <ol id="possible-list">
+                    <li>abc</li>
+                    <li>abc</li>
+                    <li>abc</li>
+                </ol>
+            </div>
+        </div>
+        <div class="central">
+            <section class="game-board">
+                <div class="board-row">
+                    <div class="tile">board</div>
+                    <div class="tile"></div>
+                    <div class="tile"></div>
+                    <div class="tile"></div>
+                    <div class="tile"></div>
+                    <div class="tile"></div>
+                </div>
+                <div class="board-row">
+                    <div class="tile"></div>
+                    <div class="tile"></div>
+                    <div class="tile"></div>
+                    <div class="tile"></div>
+                    <div class="tile"></div>
+                    <div class="tile"></div>
+                </div>
+                <div class="board-row">
+                    <div class="tile"></div>
+                    <div class="tile"></div>
+                    <div class="tile"></div>
+                    <div class="tile"></div>
+                    <div class="tile"></div>
+                    <div class="tile"></div>
+                </div>
+            </section>
+            <section id="keyboard">
+                <div class="key">keyboard</div>
+                <div class="key"></div>
+                <div class="key"></div>
+                <div class="key"></div>
+            </section>
+        </div>
+        <div class="top-picks">
+            top picks
+        </div>
+    </div>
 </body>
 </html>
