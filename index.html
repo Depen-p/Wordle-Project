@@ -9,17 +9,18 @@
     <script src="script.js" defer></script>
 </head>
 <body>
-    <div class="header">
+    <header class="header">
         <button class="material-symbols-outlined">help</button>
         <h1>WORDLE</h1>
-    </div>
+        <button class="new-game">NEW GAME</button>
+    </header>
     <div class="main">
         <div class="possible">
             <div class="toggle">
                 <input type="checkbox" id="check">
                 <label for="check" class="toggle-button"></label>
             </div>
-            <h4>Show possibilities & top picks</h3>
+            <h4>Show possibilities & top picks</h4>
             <div class="show-hint" id="possible-words">
                 <h3>Possible Words : </h3>
                 <ol id="possible-list">
@@ -32,7 +33,6 @@
         <div class="central">
             <section class="game-board">
                 <div class="board-row">
-                    <div class="tile">board</div>
                     <div class="tile"></div>
                     <div class="tile"></div>
                     <div class="tile"></div>
@@ -45,6 +45,12 @@
                     <div class="tile"></div>
                     <div class="tile"></div>
                     <div class="tile"></div>
+                </div>
+                <div class="board-row">
+                    <div class="tile"></div>
+                    <div class="tile"></div>
+                    <div class="tile"></div>
+                    <div class="tile"></div>
                     <div class="tile"></div>
                 </div>
                 <div class="board-row">
@@ -53,15 +59,58 @@
                     <div class="tile"></div>
                     <div class="tile"></div>
                     <div class="tile"></div>
+                </div>
+                <div class="board-row">
+                    <div class="tile"></div>
+                    <div class="tile"></div>
+                    <div class="tile"></div>
+                    <div class="tile"></div>
+                    <div class="tile"></div>
+                </div>
+                <div class="board-row">
+                    <div class="tile"></div>
+                    <div class="tile"></div>
+                    <div class="tile"></div>
+                    <div class="tile"></div>
                     <div class="tile"></div>
                 </div>
             </section>
-            <section id="keyboard">
-                <div class="key">keyboard</div>
-                <div class="key"></div>
-                <div class="key"></div>
-                <div class="key"></div>
-            </section>
+            <div id="keyboard">
+                <div class="key-row">
+                    <button class="key" data-key ="q">Q</button>
+                    <button class="key" data-key ="w">W</button>
+                    <button class="key" data-key ="e">E</button>
+                    <button class="key" data-key ="r">R</button>
+                    <button class="key" data-key ="t">T</button>
+                    <button class="key" data-key ="y">Y</button>
+                    <button class="key" data-key ="u">U</button>
+                    <button class="key" data-key ="i">I</button>
+                    <button class="key" data-key ="o">O</button>
+                    <button class="key" data-key ="p">P</button>
+                </div>
+                <div class="key-row">
+                    <button class="key" data-key ="a">A</button>
+                    <button class="key" data-key ="s">S</button>
+                    <button class="key" data-key ="d">D</button>
+                    <button class="key" data-key ="f">F</button>
+                    <button class="key" data-key ="g">G</button>
+                    <button class="key" data-key ="h">H</button>
+                    <button class="key" data-key ="j">J</button>
+                    <button class="key" data-key ="k">K</button>
+                    <button class="key" data-key ="l">L</button>
+                </div>
+                <div class="key-row">
+                    <button class="key" id="enter" data-key ="enter">ENTER</button>
+                    <button class="key" data-key ="z">Z</button>
+                    <button class="key" data-key ="x">X</button>
+                    <button class="key" data-key ="c">C</button>
+                    <button class="key" data-key ="v">V</button>
+                    <button class="key" data-key ="b">B</button>
+                    <button class="key" data-key ="n">N</button>
+                    <button class="key" data-key ="m">M</button>
+                    <button class="key" data-key ="delete">⌫</button>
+                </div>
+            </div>
         </div>
         <div class="top-picks">
             top picks
